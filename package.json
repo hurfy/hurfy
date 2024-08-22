@@ -1,0 +1,27 @@
+{
+    "name": "hurfy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hurfy/hurfy.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hurfy/hurfy/issues"
+    },
+    "homepage": "https://github.com/hurfy/hurfy#readme",
+    "dependencies": {
+        "date-fns": "^2.16.1",
+        "next": "^14.2.6",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "universal-analytics": "^0.5.3"
+    }
+}
