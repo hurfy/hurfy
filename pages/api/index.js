@@ -7,7 +7,6 @@ export default async (req, res) => {
 
     res.statusCode = 200
     res.setHeader('Content-Type', 'image/svg+xml')
-    res.setHeader('Cache-Control', 'max-age=3600')
     res.end(/* html */`
         <svg version="1.1"
             baseProfile="full"
