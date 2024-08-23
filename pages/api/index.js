@@ -7,19 +7,17 @@ export default async (req, res) => {
 
     res.statusCode = 200
     res.setHeader('Content-Type', 'image/svg+xml')
-    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-    res.setHeader('Pragma', 'no-cache');
-    res.setHeader('Expires', '0');
+    res.setHeader('Cache-Control', 'max-age=3600');
 
     res.end(/* html */`
         <svg version="1.1"
-            baseProfile="full"
-            height="231"
-            max-width="1680"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            height="560"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1680 560">
 
             <defs>
-                <rect id="rect" x="0" y="0" width="1680" height="99%" rx="6"/>
+                <rect id="rect" x="0" y="0" width="1680" height="100%" rx="6" ry="6"/>
                 <clipPath id="clip">
                     <use xlink:href="#rect"/>
                 </clipPath>
@@ -30,7 +28,6 @@ export default async (req, res) => {
 
             <image
                 id="image"
-                width="100%"
                 height="100%"
                 clip-path="url(#clip)"
                 xlink:href="data:image/gif;base64,${image}"
@@ -41,19 +38,19 @@ export default async (req, res) => {
             <!-- <rect x="16" y="185" width="380" height="23" fill="black"/> -->
             <!-- <rect x="115" y="185" width="180" height="23" fill="white"/> -->
 
-            <text class="text" x="50%" y="110" text-anchor="middle" font-size="32px" style="opacity: 0" font-weight="bold" fill="#fff" id="name_d1">
+            <text class="text" x="50%" y="240" text-anchor="middle" font-size="64px" style="opacity: 0; fill: #fff; text-shadow: 0 0 20px rgba(0, 0, 0, 0.7)" font-weight="bold" id="name_d1">
                 Hi there👋
             </text>
-            <text class="text" x="50%" y="138" text-anchor="middle" font-size="18px" style="opacity: 0" fill="#fff" id="name_d2">
+            <text class="text" x="50%" y="296" text-anchor="middle" font-size="36px" style="opacity: 0" fill="#fff" id="name_d2">
                 My name is Ilya Grobovskikh!
             </text>
-            <text class="text" x="50%" y="160" text-anchor="middle" font-size="18px" style="opacity: 0" fill="#fff" id="name_d3">
+            <text class="text" x="50%" y="340" text-anchor="middle" font-size="36px" style="opacity: 0" fill="#fff" id="name_d3">
                 I do software engineering!
             </text>
 
-            <animate xlink:href="#name_d1" attributeType="CSS" attributeName="opacity" from="0" begin="6.5s" to="1" dur="0.1s" repeatCount="1" fill="freeze"  />
-            <animate xlink:href="#name_d2" attributeType="CSS" attributeName="opacity" from="0" begin="7.5s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
-            <animate xlink:href="#name_d3" attributeType="CSS" attributeName="opacity" from="0" begin="7.5s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
+            <animate xlink:href="#name_d1" attributeType="CSS" attributeName="opacity" from="0" begin="3.7s" to="100" dur="0.1s" repeatCount="1" fill="freeze" />
+            <animate xlink:href="#name_d2" attributeType="CSS" attributeName="opacity" from="0" begin="6s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
+            <animate xlink:href="#name_d3" attributeType="CSS" attributeName="opacity" from="0" begin="6s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
         </svg>
     `)
 }
