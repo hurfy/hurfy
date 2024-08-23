@@ -38,7 +38,7 @@ export default async (req, res) => {
             <!-- <rect x="16" y="185" width="380" height="23" fill="black"/> -->
             <!-- <rect x="115" y="185" width="180" height="23" fill="white"/> -->
 
-            <text class="text" x="50%" y="240" text-anchor="middle" font-size="64px" style="opacity: 0; fill: #fff; text-shadow: 0 0 20px rgba(0, 0, 0, 0.7)" font-weight="bold" id="name_d1">
+            <text class="text" x="50%" y="240" text-anchor="middle" font-size="64px" style="opacity: 0; text-shadow: 0 0 20px rgba(0, 0, 0, 0.7)" fill="#fff" font-weight="bold" id="name_d1">
                 Hi there👋
             </text>
             <text class="text" x="50%" y="296" text-anchor="middle" font-size="36px" style="opacity: 0" fill="#fff" id="name_d2">
@@ -47,6 +47,8 @@ export default async (req, res) => {
             <text class="text" x="50%" y="340" text-anchor="middle" font-size="36px" style="opacity: 0" fill="#fff" id="name_d3">
                 I do software engineering!
             </text>
+
+            <text class="text" x="30" y="42" font-size="24px" fill="#fff" style="text-shadow: 0 0 20px rgba(0, 0, 0, 0.7)">${format(new Date(), "iii, MMM. do, yyy")}</text>
 
             <animate xlink:href="#name_d1" attributeType="CSS" attributeName="opacity" from="0" begin="3.7s" to="100" dur="0.1s" repeatCount="1" fill="freeze" />
             <animate xlink:href="#name_d2" attributeType="CSS" attributeName="opacity" from="0" begin="6s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
