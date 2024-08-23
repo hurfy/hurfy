@@ -52,7 +52,7 @@ export default async (req, res) => {
 
             <animate xlink:href="#name_d1" attributeType="CSS" attributeName="opacity" from="0" begin="3.7s" to="100" dur="0.1s" repeatCount="1" fill="freeze" />
             <animate xlink:href="#name_d2" attributeType="CSS" attributeName="opacity" from="0" begin="6s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
-            <animate xlink:href="#name_d3" attributeType="CSS" attributeName="opacity" from="0" begin="6s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
+            <animate xlink:href="#name_d3" attributeType="CSS" attributeName="opacity" from="0" begin="7s" to="1" dur="1s" repeatCount="1" fill="freeze"  />
         </svg>
     `)
 }
