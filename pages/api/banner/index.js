@@ -39,7 +39,7 @@ export default async (req, res) => {
                 Hey there👋
             </text>
             <text class="text" x="50%" y="306" text-anchor="middle" font-size="36px" style="opacity: 0; text-shadow: 0 0 20px rgba(0, 0, 0, 0.7)" fill="#fff" id="name_d2">
-                My name is Ilya Grobovskikh.
+                My name is Ilya K.
             </text>
             <text class="text" x="50%" y="350" text-anchor="middle" font-size="36px" style="opacity: 0; text-shadow: 0 0 20px rgba(0, 0, 0, 0.7)" fill="#fff" id="name_d3">
                 I do software engineering!
